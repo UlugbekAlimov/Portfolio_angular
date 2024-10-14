@@ -1,0 +1,86 @@
+<nav class="bg-white p-6 fixed top-0 left-0 w-full z-10 border-b-2 shadow-xl rounded-b-2xl">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="../../../favicon.ico" alt="Icon" class="h-8 mr-2" />
+        <div
+          class="relative lg:text-lg tracking-wider text-[#333333] cursor-pointer hover:text-purple-900 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-purple-900 after:transition-all after:duration-300 hover:after:w-full"
+        >
+          ALIMOV ULUGBEK
+        </div>
+      </div>
+      <div class="hidden md:flex space-x-16">
+        <a
+          routerLink="/"
+          class="relative tracking-wider text-[#333333] cursor-pointer hover:text-purple-900 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-purple-900 after:transition-all after:duration-300 hover:after:w-full"
+        >
+          HOME
+        </a>
+        <a
+          routerLink="/about"
+          class="relative tracking-wider text-[#333333] cursor-pointer hover:text-purple-900 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-purple-900 after:transition-all after:duration-300 hover:after:w-full"
+          >ABOUT</a
+        >
+        <a
+          routerLink="/services"
+          class="relative tracking-wider text-[#333333] cursor-pointer hover:text-purple-900 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-purple-900 after:transition-all after:duration-300 hover:after:w-full"
+          >EXPERIENSE</a
+        >
+        <a
+          routerLink="/contact"
+          class="relative tracking-wider text-[#333333] cursor-pointer hover:text-purple-900 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-purple-900 after:transition-all after:duration-300 hover:after:w-full"
+          >CONTACT</a
+        >
+      </div>
+      <div class="md:hidden">
+        <button
+          (click)="toggleMenu()"
+          class="text-[#333333] cursor-pointer focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      class="md:hidden overflow-hidden transition-[max-height] duration-500 ease-in-out"
+      [ngClass]="{ 'max-h-0': !isOpen, 'max-h-screen': isOpen }"
+    >
+      <div class="flex flex-col items-end space-y-2 p-4">
+        <hr class="border-t border-gray-300 w-full" />
+        
+        <a
+          routerLink="/"
+          class="relative text-sm text-[#333333] cursor-pointer hover:text-purple-900 border-gray-300 pt-2 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-purple-900 after:transition-all after:duration-300 hover:after:w-full"
+          >HOME</a
+        >
+        <a
+          routerLink="/about"
+          class="relative text-sm text-[#333333] cursor-pointer hover:text-purple-900 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-purple-900 after:transition-all after:duration-300 hover:after:w-full"
+          >ABOUT</a
+        >
+        <a
+          routerLink="/services"
+          class="relative text-sm text-[#333333] cursor-pointer hover:text-purple-900 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-purple-900 after:transition-all after:duration-300 hover:after:w-full"
+          >EXPERIENSE</a
+        >
+        <a
+          routerLink="/contact"
+          class="relative text-sm text-[#333333] cursor-pointer hover:text-purple-900 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-purple-900 after:transition-all after:duration-300 hover:after:w-full"
+          >CONTACT</a
+        >
+      </div>
+    </div>
+  </nav>
+  
