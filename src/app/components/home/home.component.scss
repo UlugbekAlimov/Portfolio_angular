@@ -1,3 +1,9 @@
 .bg-image{
   background: url('../../../assets/img/bg.jpg');
 }
+
+.btn-color{
+  -webkit-box-shadow:0px 0px 26px 7px rgba(210,46,255,0.45);
+  -moz-box-shadow: 0px 0px 26px 7px rgba(210,46,255,0.45);
+  box-shadow: 0px 0px 26px 7px rgba(210,46,255,0.45);
+}

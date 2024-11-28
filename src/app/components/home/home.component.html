@@ -1,3 +1,76 @@
-<div class="bg-cover h-screen w-full pt-22">
-  <img src="../../../assets/img/cool-background (1).png" alt="" class="object-cover h-full w-full">
+<div class="bg-triangle-pattern h-screen w-full px-5 pt-22 z-10 relative">
+  <div class="flex flex-col gap-5 items-center justify-center h-full">
+    <h1 class="sm:text-5xl md:text-6xl text-4xl font-bold text-center">HEY, I'M ULUGBEK</h1>
+    <p class="sm:text-2xl text-xl text-gray-600 text-center w-1/2 mt-4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, doloribus.
+    </p>
+    <button
+      class="mt-6 px-16 font-bold text-xl py-4 bg-purple-600 btn-color text-white rounded-lg hover:bg-purple-700 transition-all duration-200 ease-in-out hover:-translate-y-1 hover:scale-10"
+    >
+      PROJECTS
+    </button>
+  </div>
+  @if(isMenuVisible){
+  <div class="absolute top-64 bg-white left-0 p-2 rounded-r-lg shadow-xl">
+    <ul class="flex flex-col gap-3 text-lg">
+      <li
+        class="hover:bg-gray-300 hover:scale-110 transition-all duration-300 rounded-full p-2"
+      >
+        <a href="#"
+          ><img
+            width="30"
+            src="../../../assets/svg/github-fill.svg"
+            alt="GitHub"
+        /></a>
+      </li>
+      <li
+        class="hover:bg-gray-300 hover:scale-110 transition-all duration-300 rounded-full p-2"
+      >
+        <a href="#"
+          ><img
+            width="30"
+            src="../../../assets/svg/instagram-fill (1).svg"
+            alt="Instagram"
+        /></a>
+      </li>
+      <li
+        class="hover:bg-gray-300 hover:scale-110 transition-all duration-300 rounded-full p-2"
+      >
+        <a href="#"
+          ><img
+            width="30"
+            src="../../../assets/svg/telegram-2-fill.svg"
+            alt="Telegram"
+        /></a>
+      </li>
+      <li
+        class="hover:bg-gray-300 hover:scale-110 transition-all duration-300 rounded-full p-2"
+      >
+        <a href="#"
+          ><img
+            width="30"
+            src="../../../assets/svg/linkedin-box-fill.svg"
+            alt="LinkedIn"
+        /></a>
+      </li>
+    </ul>
+  </div>
+  }
+
 </div>
+
+<style>
+  @layer utilities {
+    .bg-triangle-pattern {
+      background-color: #f9f9f9;
+      background-image: linear-gradient(
+          120deg,
+          rgba(0, 0, 0, 0.02) 25%,
+          transparent 25%
+        ),
+        linear-gradient(240deg, rgba(0, 0, 0, 0.02) 25%, transparent 25%),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.02) 1%, transparent 1%);
+      background-size: 102px 102px;
+    }
+  }
+</style>

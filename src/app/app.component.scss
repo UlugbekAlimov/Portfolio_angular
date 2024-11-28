@@ -1,0 +1,86 @@
+app-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+app-home {
+  margin-top: 4rem; 
+}
+
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #ffffff, #dcdcdc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 1s ease-out, visibility 1s ease-out;
+}
+
+.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.welcome-text {
+  font-size: 6rem;
+  color: #333;
+}
+
+@media ( max-width:768px ){
+  .welcome-text{
+    font-size: 3rem;
+  }
+
+  .splash-screen{
+    background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
+  }
+}
+@media ( max-width:480px ){
+  .welcome-text{
+    font-size: 3rem;
+  }
+}
+
+.focus-in-expand {
+  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.blur-out-contract {
+  -webkit-animation: blur-out-contract 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: blur-out-contract 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes blur-out-contract {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  100% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
