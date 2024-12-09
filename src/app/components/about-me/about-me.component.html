@@ -1,31 +1,38 @@
 <section id="about" class="pt-1">
-  <div class="min-h-screen flex flex-col mx-auto container items-center sm:py-20 py-10">
+  <div
+    class="min-h-screen flex flex-col mx-auto container items-center sm:py-20 py-10"
+  >
     <h1 class="text-4xl mt-4 font-bold mb-4">ABOUT ME</h1>
     <hr class="w-10 bg-violet-600 p-0.5 rounded-xl mb-4" />
     <p class="text-xl text-gray-600 text-center sm:w-2/3 px-2 mt-4 mb-20">
-      Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.
+      Here you will find more information about me, what I do, and my current
+      skills mostly in terms of programming and technology.
     </p>
     <div class="container mx-auto flex flex-col lg:flex-row gap-8 px-4">
       <div class="flex-1">
         <h2 class="text-3xl font-bold mb-4">Get to know me!</h2>
         <p class="text-gray-600 mb-4 text-lg">
-          I'm a <span class="font-bold">Frontend Focused Web Developer</span> building and managing the
-          Front-end of Websites and Web Applications that leads to the success
-          of the overall product. Check out some of my work in the <span class="font-bold">Projects</span> section.
+          I'm a
+          <span class="font-bold">Frontend Focused Web Developer</span> building
+          and managing the Front-end of Websites and Web Applications that leads
+          to the success of the overall product. Check out some of my work in
+          the <span class="font-bold">Projects</span> section.
         </p>
-        <button
-        class="mt-6 btn-color px-10 font-bold sm:text-xl text-base py-4 bg-violet-600 btn-color text-white rounded-lg hover:bg-violet-700 transition-all duration-200 ease-in-out"
-      >
-        CONTACT
-      </button>
+        <a href="#contact">
+          <button
+            class="mt-6 btn-color px-10 font-bold sm:text-xl text-base py-4 bg-violet-600 btn-color text-white rounded-lg hover:bg-violet-700 transition-all duration-200 ease-in-out"
+          >
+            CONTACT
+          </button>
+        </a>
       </div>
-  
+
       <div class="flex-1">
         <h2 class="text-3xl font-semibold mb-4">My Skills</h2>
-        <div class="flex flex-wrap gap-4"> 
+        <div class="flex flex-wrap gap-4">
           <span
             *ngFor="let skill of skills"
-            class="bg-gray-200 transition-all hover:-translate-y-1 scale-10 text-gray-500 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-300 cursor-pointer text-base "
+            class="bg-gray-200 transition-all hover:-translate-y-1 scale-10 text-gray-500 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-300 cursor-pointer text-base"
           >
             {{ skill }}
           </span>
@@ -34,4 +41,4 @@
     </div>
   </div>
 </section>
-<hr class="bg-white">
+<hr class="bg-white" />
